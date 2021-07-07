@@ -3,6 +3,8 @@ name: Helpers
 on:
   workflow_run:
     workflows: ["Pull Request Tests"]
+    types: 
+      - requested
 
 env:
   app: Accept:application/vnd.github.v3+json
