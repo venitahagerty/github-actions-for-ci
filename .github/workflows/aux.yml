@@ -28,7 +28,7 @@ jobs:
         key: helperid-${{ github.event.workflow_run.id }}
         
     - name: print id file
-      run: cat id_file
+      run: cat ~/id_file
 
   repocheck:
     name: Repo check
@@ -50,4 +50,4 @@ jobs:
         key: repocheck-${{ github.event.workflow_run.id }}
 
     - name: print repocheck file
-      run: cat repocheck_file
+      run: cat ~/repocheck_file
